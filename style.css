@@ -1,0 +1,124 @@
+:root {
+  --bg: #020617;
+  --card: #0f172a;
+  --neon: #22d3ee;
+  --accent: #a855f7;
+  --text: #e5e7eb;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: radial-gradient(circle at top, #020617, #000);
+  color: var(--text);
+  padding: 20px;
+}
+
+header {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+header h1 {
+  color: var(--neon);
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+input, select {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #22d3ee33;
+  background: #020617;
+  color: white;
+}
+
+.grid {
+  max-width: 1200px;
+  margin: 30px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: linear-gradient(180deg, #0f172a, #020617);
+  border-radius: 14px;
+  border: 1px solid #22d3ee44;
+  overflow: hidden;
+  box-shadow: 0 0 30px #22d3ee22;
+  display: flex;
+  flex-direction: column;
+}
+
+.card img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+
+.card .content {
+  padding: 15px;
+  flex: 1;
+}
+
+.card h3 {
+  margin: 0 0 6px;
+}
+
+.card p {
+  opacity: 0.7;
+  font-size: 0.9rem;
+}
+
+.price {
+  color: var(--neon);
+  font-weight: bold;
+}
+
+.buy {
+  display: block;
+  margin-top: 10px;
+  padding: 12px;
+  text-align: center;
+  border-radius: 10px;
+  background: linear-gradient(90deg, var(--neon), var(--accent));
+  color: #020617;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.detail {
+  max-width: 900px;
+  margin: 40px auto;
+  background: var(--card);
+  padding: 20px;
+  border-radius: 16px;
+  border: 1px solid #22d3ee44;
+}
+
+.detail img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.back {
+  color: var(--neon);
+  text-decoration: none;
+}
+
+.loader {
+  text-align: center;
+  margin-top: 40px;
+  opacity: 0.6;
+}
