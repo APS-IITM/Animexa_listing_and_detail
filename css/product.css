@@ -1,0 +1,51 @@
+:root {
+  --bg: #0f0f0f;
+  --card: #1a1a1a;
+  --text: #ffffff;
+  --muted: #b3b3b3;
+  --accent: #00ff99;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: Arial;
+  padding: 20px;
+}
+
+.back {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.product-box {
+  max-width: 650px;
+  margin: 30px auto;
+  background: var(--card);
+  padding: 20px;
+  border-radius: 14px;
+}
+
+.product-box img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.product-box h1 {
+  margin-top: 15px;
+}
+
+.product-box p {
+  color: var(--muted);
+}
+
+.buy-now {
+  margin-top: 15px;
+  padding: 14px 22px;
+  background: var(--accent);
+  color: black;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
