@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    background: radial-gradient(circle at top, #111, #000);
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 50px;
+    max-width: 1100px;
+    margin: auto;
+    animation: fadeIn 1s ease;
+}
+
+img {
+    width: 420px;
+    border-radius: 22px;
+}
+
+.info {
+    max-width: 500px;
+}
+
+.price {
+    font-size: 26px;
+    color: #00e5ff;
+    margin: 20px 0;
+}
+
+button {
+    padding: 14px 36px;
+    border-radius: 30px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    background: linear-gradient(135deg, #7f5cff, #00e5ff);
+    transition: transform .3s, box-shadow .3s;
+}
+
+    button:hover {
+        transform: scale(1.08);
+        box-shadow: 0 0 25px rgba(0,229,255,.7);
+    }
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    background: radial-gradient(circle at top, #111, #000);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+.hero {
+    text-align: center;
+    animation: fadeIn 1.2s ease;
+}
+
+.actions {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+button {
+    padding: 14px 28px;
+    border-radius: 30px;
+    border: none;
+    background: linear-gradient(135deg, #7f5cff, #00e5ff);
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform .3s, box-shadow .3s;
+}
+
+    button:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 0 25px rgba(0,229,255,.6);
+    }
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
