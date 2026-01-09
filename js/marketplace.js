@@ -110,12 +110,13 @@ async function loadProducts() {
             const card = document.createElement("div");
             card.className = "card";
 
-            const imageUrl = p.image_url || "https://via.placeholder.com/260x160?text=No+Image";
+            // ✅ UPDATED: Use video_url instead of image_url
+            const videoUrl = p.video_url || "https://via.placeholder.com/260x160?text=No+Video";
             const price = p.price ? `₹${p.price}` : "Contact";
             const description = p.short_desc || "No description available";
 
             card.innerHTML = `
-                <img src="${imageUrl}" alt="${p.name}" onerror="this.src='https://via.placeholder.com/260x160?text=Error'"/>
+                <img src="${videoUrl}" alt="${p.name}" onerror="this.src='https://via.placeholder.com/260x160?text=Error'"/>
                 <h3>${p.name}</h3>
                 <p>${description}</p>
                 <div class="price">${price}</div>

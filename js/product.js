@@ -4,7 +4,8 @@ if (!product) {
     window.location.href = "marketplace.html";
 }
 
-document.getElementById("image").src = product.image_url;
+// ✅ UPDATED: Use video_url instead of image_url
+document.getElementById("video").src = product.video_url;
 document.getElementById("name").innerText = product.name;
 document.getElementById("desc").innerText =
     product.full_desc || product.short_desc;
